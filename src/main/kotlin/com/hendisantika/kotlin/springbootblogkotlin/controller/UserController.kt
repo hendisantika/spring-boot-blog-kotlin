@@ -22,12 +22,12 @@ import java.util.*
  * To change this template use File | Settings | File Templates.
  */
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/users", produces = arrayOf("application/hal+json"))
 class UserController(
         private val userRepository: UserRepository,
         private val userResourceAssembler: UserResourceAssembler) {
 
-    @GetMapping
+    @GetMapping()
     fun getUsers(pageable: Pageable,
                  pagedResourcesAssembler: PagedResourcesAssembler<User>): PagedResources<Resource<User>> {
         val users = userRepository.findAll(pageable)
