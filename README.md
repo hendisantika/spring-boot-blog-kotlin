@@ -153,3 +153,39 @@ http://localhost:8080/users?page=0&size=20
 }
 ```
 
+`GET /post`
+
+http://localhost:8080/posts
+```
+
+{
+
+    "content": [ ],
+    "pageable": {
+        "sort": {
+            "sorted": false,
+            "unsorted": true,
+            "empty": true
+        },
+        "offset": 0,
+        "pageSize": 20,
+        "pageNumber": 0,
+        "unpaged": false,
+        "paged": true
+    },
+    "totalPages": 0,
+    "totalElements": 0,
+    "last": true,
+    "size": 20,
+    "number": 0,
+    "first": true,
+    "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+    },
+    "numberOfElements": 0,
+    "empty": true
+
+}
+```
