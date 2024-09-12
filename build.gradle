@@ -1,7 +1,7 @@
 buildscript {
     ext {
         kotlinVersion = '1.2.71'
-        springBootVersion = '3.3.1'
+        springBootVersion = '3.3.2'
     }
     repositories {
         mavenCentral()
@@ -41,13 +41,13 @@ dependencies {
 compileKotlin {
     kotlinOptions {
         freeCompilerArgs = ['-Xjsr305=strict']
-        jvmTarget = '1.8'
+        jvmTarget = '21'
     }
 }
 
 compileTestKotlin {
     kotlinOptions {
         freeCompilerArgs = ['-Xjsr305=strict']
-        jvmTarget = '1.8'
+        jvmTarget = '21'
     }
 }
